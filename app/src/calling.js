@@ -15,9 +15,25 @@ export default function Calling() {
         }
         getFood();
     }, []);
+
     if (food.length !==0) {
         return (
-            console.log(food)
+            <>
+            <ul>
+                {console.log(food)}
+                {food.map((e) => {
+                    return (
+                <li> 
+                    {e.title}
+                    {e.category.title}
+                    {e.description}
+                    {e.price}
+                </li> 
+                )
+                })}
+            </ul>
+            </>
+            // console.log(food)
         )
     }
 };
@@ -29,6 +45,14 @@ export default function Calling() {
 
 
 
+    // food.forEach((e) => {
+
+    // let mealTime = food.category;
+    // let description = food.description;
+    // let price = food.price;
+    // let spiceLevel = food.spicy_level;
+    // let foodName = food.title;
+    // });
 
 
 
