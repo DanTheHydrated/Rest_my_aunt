@@ -5,19 +5,19 @@ import {useState, useEffect} from 'react';
 
 export default function Calling() {
     const [food, setFood] = useState([]);
-
+    console.log('yes')
     useEffect(() => {
         async function getFood(){
-            const response = await axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
-            setFood(response.data);
+            await axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
+            .then((response)=> {
+                setFood(response.data);
+            });
         }
-
         getFood();
     }, []);
-
-    if (food.length !=0) {
+    if (food.length !==0) {
         return (
-            console.log(food.data)
+            console.log(food)
         )
     }
 };
