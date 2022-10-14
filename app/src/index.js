@@ -1,17 +1,35 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import Calling from './calling';
+import Calling from './Calling';
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.js';
 import goose from './images/my_project.png';
 import pizza from './images/krusty_krab_pizza.png';
 import funZone from'./images/real_Location.jpg';
+import yum from './images/PerfectBurger.png';
+import jeff from './images/Jeff.jpeg';
+import './app.css';
+import PushingP from './LandingPage';
+import Menu from './Menu.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <> 
-  <div className="card w-25 border-radius-5 position-absolute top-50 start-100 translate-middle" >
+  <>
+    <Calling />
+
+    </>
+);
+
+// Use rows and coloms dummy! Why are you trying this?!?!?!
+{/* <Menu />
+<PushingP /> */}
+    {/* <Calling /> */}
+
+
+
+
+{/* <div className="card w-25 border-radius-10 style="width: 20rem;"  position-absolute top-50 start-100 translate-middle" >
 <img src={funZone} className="card-img-top" alt="location!" />
   <div className="card-body">
     <h5 className="card-title">Location!</h5>
@@ -19,10 +37,9 @@ root.render(
     <a href="https://www.google.com/maps/place/501+NW+New+Circle+Rd,+Lexington,+KY+40511/@38.0724219,-84.4822852,17z/data=!3m1!4b1!4m5!3m4!1s0x884245b2b6565d99:0xacc1e6a677b2769e!8m2!3d38.0724219!4d-84.4800965" class="btn btn-primary">Come See us!</a>
   </div>
 </div>
-  </>
-);
+ */}
 
-// Use rows and coloms dummy! Why are you trying this?!?!?!
+
 
 
 
@@ -39,10 +56,22 @@ root.render(
 </div> */}
 
 
+    {/* <div className='container'>
+      <div className='row justify-content-center'>
+        <div className='col-lg-6 col-md-12'>
+          <div className="card border-radius-10" >
+            <img src={goose} className="card-img-top" alt="location!" />
+            <div className="card-body">
+              <h5 className="card-title"></h5>
+              <p className="card-text">Come on down and eat with us!</p>
+              <a href="https://www.google.com/maps/place/501+NW+New+Circle+Rd,+Lexington,+KY+40511/@38.0724219,-84.4822852,17z/data=!3m1!4b1!4m5!3m4!1s0x884245b2b6565d99:0xacc1e6a677b2769e!8m2!3d38.0724219!4d-84.4800965" class="btn btn-primary">Come See us!</a>
+            </div>
+          </div>
+        </div>
+      </div> */}
 
 
 
-    {/* <Calling /> */}
 
 
     {/* <nav className='navbar sticky-top navbar-expand-lg navbar-light bg-light'>

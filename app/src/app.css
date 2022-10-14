@@ -1,0 +1,18 @@
+
+body {
+        background: url("/workspace/Rest_my_aunt/app/src/images/inside_Krab.png") no-repeat center center fixed;
+        background-size: cover;
+        background-color: rgba(41, 86, 86, 0.706);
+        background-blend-mode: overlay;
+
+}
+
+
+
+
+/* .bg-image {
+        background-Image: url('./images/Inside.png');
+        background-Position: 'center';
+        background-Size: 'cover';
+        background-Repeat: 'no-repeat'
+} */

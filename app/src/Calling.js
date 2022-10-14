@@ -1,11 +1,12 @@
 import axios from "axios";
 import {useState, useEffect} from 'react';
+import Menu from "./Menu";
 
 
 
 export default function Calling() {
     const [food, setFood] = useState([]);
-    console.log('yes')
+    // console.log('yes')
     useEffect(() => {
         async function getFood(){
             await axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/')
@@ -15,12 +16,11 @@ export default function Calling() {
         }
         getFood();
     }, []);
-
+    console.log(food)
     if (food.length !==0) {
         return (
             <>
-            <ul>
-                {console.log(food)}
+            <ul>       
                 {food.map((e) => {
                     return (
                 <li> 
@@ -32,8 +32,8 @@ export default function Calling() {
                 )
                 })}
             </ul>
-            </>
-            // console.log(food)
+            <Menu menuFood = {food}/>
+            // </>
         )
     }
 };

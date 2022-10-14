@@ -1,16 +1,28 @@
-import Calling from "./calling";
+
+import goose from './images/my_project.png';
+import Calling from './Calling';
 
 
 
 
-export default function Menu () {
+export default function Menu (props) {
+
+
+  let gangShit = props.menuFood.filter(e => 
+    e.category.title === "Dinner"
+  );
+
+  console.log(gangShit);
+
+  return(
+    <>
     <nav class="navbar sticky-top navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a className="navbar-brand" href="#">
         <img src={goose} height="60" width="60" />
         Krusty Krab!
       </a>
-      <a class="navbar-brand" href="#"></a>
+      <a className="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,4 +38,10 @@ export default function Menu () {
       </div>
     </div>
   </nav>
-}
+  {gangShit.forEach}
+
+
+
+  </>
+  )
+};
