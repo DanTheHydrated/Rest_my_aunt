@@ -3,6 +3,7 @@ import funZone from'./images/real_Location.jpg';
 import jeff from './images/Jeff.jpeg';
 import pizza from './images/Krust_pizza.png';
 
+//this just creates the very bad landing page aka HOME
 export default function PushingP() {
     return (
         <>

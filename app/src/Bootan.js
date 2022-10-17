@@ -7,4 +7,5 @@ export default function Bootans(props) {
             {props.text}
         </h4>
     );
-}
+};
+//creates the buttons with props passed threw it

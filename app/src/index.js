@@ -6,7 +6,7 @@ import './app.css';
 import Calling from './Calling';
 
 
-
+//root. can you guess this does?
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>

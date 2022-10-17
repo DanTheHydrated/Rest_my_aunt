@@ -1,7 +1,7 @@
 import React from "react";
 import pizza from './images/Myproject(1).png';
 
-//Just the spinner 
+//Just the spinner with the image inside 
 export default function Loading() {
     return (
         <>

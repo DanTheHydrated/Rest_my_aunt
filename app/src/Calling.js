@@ -7,7 +7,7 @@ import Loading from "./Loading";
 
 
 
-
+//calling the api
 export default function Calling() {
     const [food, setFood] = useState([]);
     const [page, setPage] = useState("Home");
@@ -19,15 +19,16 @@ export default function Calling() {
                 setFood(response.data);
             });
         }
-        getFood();
+        getFood();  //sets the state of food
     }, []);
     console.log(food)
 
-
+//sets the state of the page 
     function onClick(text) {
         setPage(text);
     };
 
+    //creates the constants for food and home 
     const foods = [
         "Home",
         "Breakfast",
@@ -38,6 +39,7 @@ export default function Calling() {
         "Appetizer",
     ];
 
+    //shows the loading page 
     if (food.length === 0){
         return (
             <>
@@ -45,6 +47,8 @@ export default function Calling() {
         </>
         )
         }
+        //creates the navbar and calls the menu function
+        //food.map runs threw all the consts foods and creats buttons for each INCLUDING HOME!
     else if (food.length !==0) {
         return (
             <>
@@ -76,6 +80,18 @@ export default function Calling() {
         )
     }
 };
+//menu is ran with the data(food) and page as props 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

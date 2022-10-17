@@ -12,6 +12,7 @@ export default function Menu(props) {
     (food) => food.category.title === props.page
   );
 
+  //creates all the cards for the foods and sets them to the key so they only get called when page is set to the right key 
   return (
     <>
       {pleaseWork.map((meal) => {
