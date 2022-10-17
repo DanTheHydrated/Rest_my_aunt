@@ -19,11 +19,11 @@ export default function NavBar() {
         <>
             <nav className="navbar sticky-top navbar-expand-lg bg-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand">
                         <img src={goose} height="60" width="60" />
                         Krusty Krab!
                     </a>
-                    <a className="navbar-brand" href="#"></a>
+                    <a className="navbar-brand"></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -32,7 +32,7 @@ export default function NavBar() {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li> <a className="nav-link active" aria-current="page" text="Home" handleClick={handleclick}>Home</a> </li>
                                 {mealOptions.map((mealOption) => (
-                                    <li> <a className="nav-link active" aria-current="page" href="#"><Bootans text={mealOption} handleClick={handleclick} /></a></li>
+                                    <li> <a className="nav-link active" aria-current="page"><Bootans text={mealOption} handleClick={handleclick} /></a></li>
                                 ))}
                         </ul>
                         </div>
@@ -51,7 +51,7 @@ export default function NavBar() {
 
 
 
-                                {/* <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                {/* <a className="nav-link active" aria-current="page">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Menu!</a> */}
+                                <a className="nav-link">Menu!</a> */}

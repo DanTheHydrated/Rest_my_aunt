@@ -29,6 +29,7 @@ export default function Calling() {
     };
 
     const foods = [
+        "Home",
         "Breakfast",
         "Lunch",
         "Dinner",
@@ -47,12 +48,11 @@ export default function Calling() {
     else if (food.length !==0) {
         return (
             <>
-            <nav className="navbar sticky-top navbar-expand-lg bg-light">
+            <nav className="navbar sticky-top navbar-expand-lg d-flex bg-light">
                 <div className="container-fluid">
                     <a className="navbar-brand">
-                    {/* <Bootans text={Home} onClick={onClick}/> */}
                         <img src={goose} height="60" width="60"/>
-                        Krusty Krab!
+                        Krusty Krab!  Now open 24/7!
                     </a>
                     <a className="navbar-brand"></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
