@@ -4,7 +4,6 @@ import Menu from "./Menu";
 import Bootans from './Bootan';
 import goose from './images/my_project.png';
 import Loading from "./Loading";
-import Home from "./Home";
 
 
 
@@ -51,6 +50,7 @@ export default function Calling() {
             <nav className="navbar sticky-top navbar-expand-lg bg-light">
                 <div className="container-fluid">
                     <a className="navbar-brand">
+                    {/* <Bootans text={Home} onClick={onClick}/> */}
                         <img src={goose} height="60" width="60"/>
                         Krusty Krab!
                     </a>

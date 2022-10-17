@@ -1,26 +1,20 @@
 
 import funZone from'./images/real_Location.jpg';
-import yum from './images/PerfectBurger.png';
 import jeff from './images/Jeff.jpeg';
+import pizza from './images/Krust_pizza.png';
 
-
-
-
-
-export default function Home() {
+export default function PushingP() {
     return (
         <>
             <div className='container text-center bg-transparent'>
-                <div className='h1 text-dark justify-content-center'>Welcome to the Krusty Krab!</div>
+                <div id='center' className='h1 text-dark justify-content-center'>Welcome to the Krusty Krab!</div>
             </div>
             <div className='row justify-content-center fixed-bottom'>
                 <div className='col-lg-3 col-sm-4 '>
                     <div className="card border-radius-10" >
-                        <img src={yum} className="card-img-top" alt="location!" width='300' height='300' />
+                        <img src={pizza} className="card-img-top" alt="location!" width='300' height='300' />
                         <div className="card-img-overlay ">
-                            <h5 className="card-title">Gally Grub</h5>
-                            <p className="card-text">Get some grub!</p>
-                            <a href="" className="btn btn-secondary">Lets Eat!</a>
+                            <h5 className="card-title text-light">Comming soon!</h5>
                         </div>
                     </div>
                 </div>
