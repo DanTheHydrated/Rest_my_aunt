@@ -7,10 +7,10 @@ import pizza from './images/Krust_pizza.png';
 export default function PushingP() {
     return (
         <>
-            <div id='' className='container text-center bg-transparent'>
+            <div id='' className='container-fluid text-center bg-transparent'>
                 <div id='center' className='h1 text-dark justify-content-center'>Welcome to the Krusty Krab!</div>
             </div>
-            <div className='row justify-content-center fixed-bottom'>
+            <div className='row justify-content-center sticky-bottom'>
                 <div className='col-lg-3 col-sm-4 col-xs-4'>
                     <div className="card border-radius-10" >
                         <img src={pizza} className="card-img-top" alt="location!" width='300' height='300' />

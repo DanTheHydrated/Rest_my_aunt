@@ -8,4 +8,4 @@ export default function Bootans(props) {
         </h4>
     );
 };
-//creates the buttons with props passed threw it
+//creates the buttons with props passed through it

@@ -8,7 +8,8 @@ export default function Loading() {
             <div className='container'>
                 <div className='row vh-100'>
                     <div className='col-12 d-flex justify-content-center align-items-center'>
-                        <img src={pizza} height='200' width='200' className="spinner-border text-info" role="status"/>
+                        <div className="spinner-border text-info" role="status"><img src={pizza} height='200' width='200'/></div>
+                        {/* <img src={pizza} height='200' width='200' className="spinner-border text-info" role="status"/> */}
                         </div>
                     </div>
                 </div>
