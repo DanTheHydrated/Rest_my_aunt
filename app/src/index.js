@@ -1,23 +1,16 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Calling from './Calling';
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.js';
-import goose from './images/my_project.png';
-import pizza from './images/krusty_krab_pizza.png';
-import funZone from'./images/real_Location.jpg';
-import yum from './images/PerfectBurger.png';
-import jeff from './images/Jeff.jpeg';
 import './app.css';
-import PushingP from './LandingPage';
-import Menu from './Menu.js';
+import Calling from './Calling';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Calling />
-
+  <Calling />
     </>
 );
 

@@ -1,47 +1,37 @@
-
-import goose from './images/my_project.png';
-import Calling from './Calling';
+import Home from "./Home";
 
 
+export default function Menu(props) {
 
+  if (props.page === "Home") {
+    return <Home />;
+  }
 
-export default function Menu (props) {
-
-
-  let gangShit = props.menuFood.filter(e => 
-    e.category.title === "Dinner"
+  let pleaseWork = props.data.filter(
+    (food) => food.category.title === props.page
   );
 
-  console.log(gangShit);
-
-  return(
+  return (
     <>
-    <nav class="navbar sticky-top navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a className="navbar-brand" href="#">
-        <img src={goose} height="60" width="60" />
-        Krusty Krab!
-      </a>
-      <a className="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Menu!</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  {gangShit.forEach}
+      {pleaseWork.map((meal) => {
+        return (
+          <div
+            className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-stretch my-2"
+            key={meal.id} >
+            <div className="card w-100 bg-info bg-opacity-50">
+              <div className="card-body">
+                <h3 className="card-title text-center ">{meal.title}</h3>
+                <h5 className="card-text text-center">${meal.price}</h5>
+                <div className="card-text text-center align-items-center">
+                  {meal.description}
 
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+}
 
-
-  </>
-  )
-};

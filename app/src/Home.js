@@ -6,11 +6,12 @@ import jeff from './images/Jeff.jpeg';
 
 
 
-export default function PushingP() {
+
+export default function Home() {
     return (
         <>
             <div className='container text-center bg-transparent'>
-                <div className='h1 text-dark'>Welcome to the Krusty Krab!</div>
+                <div className='h1 text-dark justify-content-center'>Welcome to the Krusty Krab!</div>
             </div>
             <div className='row justify-content-center fixed-bottom'>
                 <div className='col-lg-3 col-sm-4 '>
@@ -19,7 +20,7 @@ export default function PushingP() {
                         <div className="card-img-overlay ">
                             <h5 className="card-title">Gally Grub</h5>
                             <p className="card-text">Get some grub!</p>
-                            <a href="https://www.google.com/maps/place/501+NW+New+Circle+Rd,+Lexington,+KY+40511/@38.0724219,-84.4822852,17z/data=!3m1!4b1!4m5!3m4!1s0x884245b2b6565d99:0xacc1e6a677b2769e!8m2!3d38.0724219!4d-84.4800965" className="btn btn-secondary">Lets Eat!</a>
+                            <a href="" className="btn btn-secondary">Lets Eat!</a>
                         </div>
                     </div>
                 </div>
